@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower|Modern+Antiqua');
+
 body,
 div,
 ul,
@@ -9,227 +11,277 @@ h3,
 h4,
 h5,
 h6 {
-  padding: 0;
-  margin: 0;
-  font-family: "Roboto", sans-serif;
+    padding: 0;
+    margin: 0;
+    font-family: 'Modern Antiqua', cursive;
+}
+
+hr {
+    background-color: white;
 }
 
 .clear-fix {
-  overflow: auto;
+    overflow: auto;
 }
 
 .education-entry,.online-entry,
 .work-entry,
 .project-entry {
-  padding: 0 5%;
+    padding: 0 5%;
 }
 
 h1 {
-  font-size: 40px;
-  color: #f5a623;
-  line-height: 48px;
-  padding: 10px;
-  display: inline;
+    font-size: 2.5em;
+    color: #f5a623;
+    line-height: 48px;
+    padding: 10px;
+    display: inline;
+    font-family: 'Indie Flower', cursive;
 }
 
 h2 {
-  font-weight: bold;
-  font-size: 24px;
-  color: #999;
-  line-height: 29px;
-  padding: 10px;
+    font-weight: bold;
+    font-size: 24px;
+    color: #000;
+    line-height: 29px;
+    padding: 10px;
 }
 
 h3 {
-  font-style: italic;
-  font-size: 20px;
-  color: #000;
-  line-height: 22px;
+    font-style: italic;
+    font-size: 20px;
+    color: #000;
+    line-height: 22px;
 }
 
 h4 {
-  font-weight: bold;
-  font-size: 14px;
-  color: #4a4a4a;
-  line-height: 17px;
+    font-weight: bold;
+    font-size: 14px;
+    color: #4a4a4a;
+    line-height: 17px;
 }
 
 h2,
 h3,
 h4,
 h5 {
-  padding: 10px 5%;
-
+    padding: 10px 5%;
 }
 
-
 .date-text {
-  font-style: italic;
-  font-size: 14px;
-  color: #999;
-  line-height: 16px;
-  float: left;
+    font-style: italic;
+    font-size: 14px;
+    color: #999;
+    line-height: 16px;
 }
 
 .location-text {
-  font-style: italic;
-  font-size: 14px;
-  color: #999;
-  line-height: 16px;
-  float: right;
-
+    font-style: italic;
+    font-size: 14px;
+    color: #999;
+    line-height: 16px;
 }
 
 p {
-  font-size: 14px;
-  color: #333;
-  line-height: 21px;
+    font-size: 14px;
+    color: #333;
+    line-height: 21px;
 }
 
 a {
-  color: #1199c3;
-  text-decoration: none;
-  margin-top: 10px;
-  display: block;
+    color: #1199c3;
+    text-decoration: none;
+    margin-top: 10px;
+    display: block;
 }
 
 .welcome-message {
-  display: block;
-  font-style: italic;
-  text-align: center;
-  font-size: 18px;
-  color: #f3f3f3;
-  line-height: 58px;
+    display: block;
+    font-style: italic;
+    text-align: center;
+    font-size: 18px;
+    color: #f3f3f3;
+    line-height: 58px;
 }
 
-#skills{
-
-display: inline-flex;
+#skills {
+    display: inline-block;
 }
+
 #skills-h3 {
-  color: #f5ae23;
-  padding: 10px;
+    color: #f5ae23;
+    font-size: 1.6em;
+    font-family: 'Indie Flower', cursive;
+    padding: 10px;
 }
-.skillsOrientation{
 
-  display: inline-block;
+.skillsOrientation {
+    display: inline-block;
+}
 
+.contact-list {
+    padding: 0;
 }
 
 .orange {
-  background-color: #f5ae23;
+    background-color: #f5ae23;
+}
+
+.bg-title {
+    background: #f5ae23;
+    border-radius: 0 70px  0 70px;
+    color: #000;
+    border: 2px solid #000;
+}
+
+.bg-title:hover {
+    background: #000;
+    color: #f5ae23;
+    border: 4px solid #f5ae23;
 }
 
 .orange-text {
-  color: #f5ae23;
+    color: #f5ae23;
+    font-size: 1.3em;
+    font-family: 'Indie Flower', cursive;
 }
 
 .white-text {
-  font-weight: bold;
-  color: #fff;
+    font-weight: bold;
+    color: #fff;
+    font-size: 0.8em;
 }
 
 .gray {
-  background-color: #f3f3f3;
-  padding-bottom: 10px;
-  clear: both;
+    background-color: #fff;
+    padding-bottom: 10px;
+    clear: both;
+}
+
+.gray:hover {
+    background-color: #f3f3f3;
 }
 
 .dark-gray {
-  background-color: #4a4a4a;
+    background-color: #4a4a4a;
 }
 
 /* TODO: Replace with image later */
 #header {
-  background-color: #000;
-  color: #fff;
-}
-
-.flex-box {
-  display: -webkit-flex;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  padding: 10px;
-}
-
-.flex-column {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  padding: 10px;
-}
-
-.center-content {
-  padding: 2.5% 5%;
+    background-color: #000;
+    color: #fff;
 }
 
 ul {
-  list-style-type: none;
+    list-style-type: none;
 }
 
 .biopic {
-  float: left;
-  padding: 10px;
-  width: 200px;
-  display: none;
+    float: left;
+    padding: 10px;
+    width: 200px;
+    display: none;
 }
 
 img {
-  padding: 10px;
-  border-radius: 0px 70px  0px 70px;
+    padding: 10px;
+    border-radius: 0px 70px  0px 70px;
 }
 
 span {
-  padding: 5px;
+    padding: 5px;
 }
 
 #lets-connect {
-  text-align: center;
+    text-align: center;
+    color: #000;
 }
 
-/* Media queries to handle various device widths */
-
-@media only screen and (max-width: 1024px) {
-  #lets-connect {
-    margin-top: 5%;
-  }
+.material-icons {
+    color: #fff;
+    vertical-align: -4px;
+    font-size: 18px !important;
 }
 
-@media only screen and (max-width:900px) {
-  .biopic {
-    width: 175px;
-  }
-}
-
-@media only screen and (max-width: 750px) {
-  #lets-connect {
-    margin-top: 10%;
-  }
-  .biopic {
-    width: 150px;
-  }
-  .welcome-message {
-    display: none;
-  }
+.fa {
+    color: #fff;
+    vertical-align: -4px;
+    margin-right: 4px;
+    font-size: 22px;
 }
 
 #map {
-  display: block;
-  height: 100%;
-  margin: 0 5%;
+    display: block;
+    height: 100%;
 }
 
 #mapDiv {
-  height: 400px;
-  width: 100%;
-  padding-bottom: 5%;
+    height: 400px;
+    width: 100%;
+    padding-bottom: 5%;
+}
+
+
+/* Media queries to handle various device widths */
+
+
+
+@media only screen and (max-width: 1024px) {
+    #lets-connect {
+        margin-top: 5%;
+    };
+}
+
+@media only screen and (max-width:900px) {
+    .biopic {
+        width: 175px;
+    };
+}
+
+@media only screen and (min-width:760px) {
+    .contact {
+        font-size: 0.8em;
+    };
+}
+
+@media only screen and (max-width: 750px) {
+    #lets-connect {
+        margin-top: 10%;
+    }
+
+    .biopic {
+        width: 150px;
+    }
+
+    .welcome-message {
+        display: none;
+    };
+    h1 {
+        font-size: 1.2em;
+    }
+
+    #subtitle {
+        font-size: 0.8em;
+    }
+
+    .contact {
+        font-size: 0.8em;
+    };
 }
 
 @media only screen and (min-width: 750px) {
-  #skills-h3,
+    #skills-h3,
   .biopic {
-    display: inline-block;
-  }
+        display: inline-block;
+    };
+}
+
+@media only screen and (max-width: 519px) {
+    h1 {
+        font-size: 1.6em;
+    }
+
+    #subtitle {
+        font-size: 0.7em;
+    };
 }

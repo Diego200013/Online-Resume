@@ -1,79 +1,127 @@
 <!DOCTYPE html>
-
 <!--
 This is an HTML document. It contains information about how elements in the website
 are arranged. In other words, it describes the layout of a website.
 -->
-
 <!--
 The <head> of a website generally links to important resources the page will
 need to load. You'll see a lot of <link>s to CSS files for styles and
 <scripts> for JavaScript files to build interactions.
 -->
 <html>
+
 <head>
-  <!-- This tells the browser how to read the document. -->
-  <meta charset="utf-8">
+    <!-- This tells the browser how to read the document. -->
+    <meta charset="utf-8">
+    <!-- Tells the browser what the title of this page should be. -->
+    <title>Online Resume</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Load the page styles. -->
+    <link href="css/styles.css" rel="stylesheet">
 
-  <!-- Tells the browser what the title of this page should be. -->
-  <title>Resume</title>
-
-  <!-- Load the page styles. -->
-  <link href="css/styles.css" rel="stylesheet">
-
-
-
-  <!--
+    <!--material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--font awesome Icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--
   Uncomment the <script> tag below when you're ready to add an interactive Google Map to your resume!
   -->
- <script src="http://maps.googleapis.com/maps/api/js?libraries=places"></script> 
-
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+    <script src="http://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyBT-nOWAvCq_Gl0NpFAUrGJSEsA2y2i5Kk">
+    </script>
+    <meta content="width=device-width,initial-scale=1" name="viewport">
 </head>
-<body>
-  <div id="main">
 
-    <!--
+<body>
+    <div class="container" id="main">
+        <!--
     Everything from here to the <script> tag below is the skeleton of your
     website. Your code will add information to each of the sections of the
     resume below. You can pretty easily figure out what each section will
     display by looking at the id or at what's written between the <h2> tags.
     -->
-    <div id="header" class="center-content clear-fix">
-      <ul id="topContacts" class="flex-box"></ul>
-    </div>
-    <div style="clear: both;"></div>
-    <div id="workExperience" class="gray">
-      <h2>Work Experience</h2>
-    </div>
-    <div id="projects">
-      <h2>Projects</h2>
-    </div>
-    <div id="education" class="gray">
-      <h2>Education</h2>
-    </div>
-    <div id="mapDiv">
-      <h2>Where I've Lived and Worked</h2>
-    </div>
-    <div id="lets-connect" class="dark-gray">
-      <h2 class="orange center-text">Let's Connect</h2>
-        <ul id="footerContacts" class="flex-box">
-      </ul>
-    </div>
-  </div>
+        <div class="row">
+            <div class="col-12" id="header"></div>
+            <div class="row">
+                <div class="col-12">
+                    <ul class="row contact justify-content-center text-center" id="topContacts"></ul>
+                </div>
+            </div>
+        </div>
+        <div style="clear: both;"></div>
+        <!--work section-->
 
-  <script src="js/jQuery.js"></script>
+        <div class="row mt-4 br-section">
+            <div class="col-12">
+                <h2 class="text-center p-4 mb-4 bg-title">Work Experience</h2>
+            </div>
+            <div class="col-12">
+                <div class="row gray" id="workExperience"></div>
+            </div>
+        </div>
+        <!--project section-->
+        <div class="row mt-4 mb-4 ">
+            <div class="col-12">
+                <h2 class="text-center p-4 mb-4 bg-title">Projects</h2>
+            </div>
+            <div class="col-12">
+                <div class="row gray" id="projects"></div>
+            </div>
+        </div>
 
-  <!-- More on helper.js in the class -->
-  <script src="js/helper.js"></script>
+        <!--education section-->
+        <div class="row mt-4 mb-4">
+            <div class="col-12">
+                <h2 class="text-center p-4 mb-4 bg-title">Education</h2>
+            </div>
+            <div class="col-12">
+                <div class="row gray" id="education"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <h3 class="p-4 mb-4">Online Classes</h3>
+            </div>
+            <div class="col-12">
+                <div class="row gray" id="online"></div>
+            </div>
+        </div>
 
-  <!--
+        <!-- map section-->
+        <div class="row mt-4">
+            <div class="col-12">
+                <h2 class="text-center p-4 mb-4 bg-title">Where I've Lived and Worked</h2>
+            </div>
+            <div class="col-12">
+
+                <div class="row" id="mapDiv"></div>
+            </div>
+        </div>
+        <div class="dark-gray" id="lets-connect">
+            <h2 class="orange center-text mb-4">Let's Connect</h2>
+            <div class="row justify-content-center">
+                <div class="col-12">
+                    <ul class="row contact text-center justify-content-center" id="footerContacts"></ul>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <script src="js/jQuery.js">
+    </script>
+    <!-- More on helper.js in the class -->
+
+    <!--
   The next line tells the browser where to download the JavaScript file you'll be
   writing. In resumeBuilder.js, you'll be writing code that builds the resume
   dynamically when this website, index.html, is opened.
   -->
-<script src="js/resumeBuilder.js"></script>
-  
-  
+    <script src="js/resumeBuilder.js">
+    </script>
+
+    <script src="js/helper.js">
+    </script>
+
 </body>
+
 </html>
